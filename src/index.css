@@ -3,7 +3,12 @@
 @import 'tailwindcss/components';
 /* 使用 Tailwind 的工具类 */
 @import 'tailwindcss/utilities';
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ZCOOL KuaiLe', monospace;
+}
 .pixel-font {
   font-family: 'ZCOOL KuaiLe', monospace;
   image-rendering: pixelated;

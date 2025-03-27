@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-900 relative overflow-hidden">
+  <div class="h-screen bg-gray-900 relative overflow-hidden">
    
     <!-- Character Strips -->
     <div
