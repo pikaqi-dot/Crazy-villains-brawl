@@ -9,7 +9,6 @@ import Phaser from 'phaser'
 onMounted(() => {
     const game = new Phaser.Game(config);
 })
-
 </script>
 
 <style scoped>
