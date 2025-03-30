@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-gray-900 relative overflow-hidden">
    
-    <!-- Character Strips -->
+    <!-- Character Strips
     <div
       class="character-strip"
       style="
@@ -43,8 +43,8 @@
         top: calc(100vh / 6 * 5);
         background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzY3MjM4YTRiZjE4ZjZhZjZhZjY4ZjY4ZjY4ZjY4ZjY4ZjY4ZjY4ZjY4/3oEjI6SIIHBdRxXI40/giphy.gif');
       "
-    ></div>
-
+    ></div> -->
+    <router-view></router-view>
     <!-- Content -->
     <div class="relative z-10 w-full h-screen flex items-center justify-center">
       <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center backdrop-blur-sm bg-gray-900/50 p-8 rounded-xl max-w-xl w-full mx-4">
@@ -61,11 +61,15 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+const router = useRouter();
 const enterGame = () => {
   // Add game entry logic here
   console.log('Entering game...');
+  router.push({ name: 'Game' }); // 跳转到游戏页面
 };
 </script>
