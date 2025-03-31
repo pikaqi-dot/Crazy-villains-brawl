@@ -13,7 +13,7 @@ export default defineConfig({
   resolve: {
     extensions: ['.ts', '.json'], // 优先解析 .ts 文件
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './public'),
     },
   },
 
