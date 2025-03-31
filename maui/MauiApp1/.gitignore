@@ -1,0 +1,28 @@
+# Build artifacts
+bin/
+obj/
+**/*.nupkg
+**/*.csproj.nuget.cache
+**/*.csproj.nuget.g.props
+**/*.csproj.nuget.g.targets
+
+# MAUI specific files
+**/MauiApp1.csproj.FileListAbsolute.txt
+**/MauiApp1.genruntimeconfig.cache
+**/MauiApp1.runtimeconfig.json.bin
+**/android/bin/
+**/android/obj/
+**/ios/bin/
+**/ios/obj/
+
+# Visual Studio files
+.vs/
+.vscode/
+*.suo
+*.ntvs*
+*.nupkg
+
+# Other
+*.user
+*.userosscache
+*.sln.docstates

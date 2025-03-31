@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import tailwindcss from "tailwindcss";
-import dts from 'vite-plugin-dts';
+import path from "path";
 export default defineConfig({
   plugins: [vue()],
   base: './', // 使用相对路径
@@ -12,6 +12,9 @@ export default defineConfig({
   },
   resolve: {
     extensions: ['.ts', '.json'], // 优先解析 .ts 文件
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
 
 });

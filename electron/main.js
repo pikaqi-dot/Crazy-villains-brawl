@@ -12,12 +12,12 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, './preload.js'),
-      nodeIntegration: true,
-      contextIsolation: false,
+      preload: path.join(__dirname, 'preload.js'), // 确保路径正确
+      contextIsolation: true,
+      nodeIntegration: false,
     },
   });
-
+  mainWindow.webContents.openDevTools();
   // 加载 Vite 开发服务器或打包后的文件
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:5173'); // Vite 默认端口

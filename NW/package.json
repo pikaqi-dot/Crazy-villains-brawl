@@ -1,0 +1,13 @@
+{
+    "name": "my-vite-vue-phaser-nw-app",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "build": "nw .",
+        "build-nw": "nwbuild ./ --platform win32 --outDir dist"
+    },
+    "devDependencies": {
+        "nw": "^0.76.0",
+        "nw-builder": "^4.13.11"
+    }
+}
