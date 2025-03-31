@@ -2,10 +2,12 @@
   "name": "vite-vue-typescript-starter",
   "private": true,
   "version": "0.0.0",
+  "main": "electron/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron desktop": "electron ."
   },
   "dependencies": {
     "phaser": "^3.88.2",
