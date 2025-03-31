@@ -13,7 +13,8 @@ dist-ssr
 *.local
 # 忽略所有 *.js 文件
 *.js
-.vs/*
+.vs/
+gen/
 # 但不排除 electron 文件夹下的 *.js 文件
 !/electron/**/*.js
 # Editor directories and files
