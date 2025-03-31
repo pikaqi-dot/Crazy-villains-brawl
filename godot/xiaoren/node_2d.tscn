@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://3jpu7yuoi8n8"]
+
+[ext_resource type="Texture2D" uid="uid://bbcx6ogrp1fv7" path="res://background.png" id="1_3dm77"]
+[ext_resource type="Texture2D" uid="uid://dj0kivqpkykeh" path="res://836.png" id="1_sfgst"]
+[ext_resource type="Texture2D" uid="uid://bvo4qqhmpllba" path="res://830.png" id="3_c8744"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="4_1mprb"]
+[ext_resource type="Texture2D" uid="uid://d27oovqqisoie" path="res://Pose.png" id="4_ul33d"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(515, 367)
+scale = Vector2(0.247054, 0.302768)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(505.488, 238.551)
+scale = Vector2(0.513196, 0.2876)
+texture = ExtResource("1_sfgst")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(519.694, 367)
+scale = Vector2(0.247054, 0.302768)
+texture = ExtResource("1_3dm77")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(6, 1587)
+scale = Vector2(0.553495, 0.579335)
+texture = ExtResource("3_c8744")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+physics_interpolation_mode = 2
+script = ExtResource("4_1mprb")
+
+[node name="Player" type="Sprite2D" parent="CharacterBody2D"]
+physics_interpolation_mode = 2
+position = Vector2(-724.538, 42.9372)
+scale = Vector2(0.887803, 0.738797)
+texture = ExtResource("4_ul33d")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -3.30286)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-724.537, 42.9371)
+scale = Vector2(0.887803, 0.738797)
