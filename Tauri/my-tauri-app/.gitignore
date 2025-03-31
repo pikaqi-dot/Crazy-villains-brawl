@@ -6,16 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-.bolt/
+
 node_modules
 dist
 dist-ssr
 *.local
-# 忽略所有 *.js 文件
-*.js
-.vs/*
-# 但不排除 electron 文件夹下的 *.js 文件
-!/electron/**/*.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -26,4 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-*.zip
