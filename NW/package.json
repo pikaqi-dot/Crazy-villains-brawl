@@ -4,7 +4,7 @@
     "main": "main.js",
     "scripts": {
         "build": "nw .",
-        "build-nw": "nwbuild ./ --platform win32 --outDir dist"
+        "build-nw": "nwbuild ./ --platform win64 --outDir dist"
     },
     "devDependencies": {
         "nw": "^0.76.0",
