@@ -7,3 +7,5 @@ ___
 ![Snipaste_2025-03-31_20-59-19.png](Snipaste_2025-03-31_20-59-19.png)
 童年经典游戏：疯狂小人战斗魔改版
 个人开源兴趣制作，持续更新，欢迎贡献！
+
+ krita艺术创作备份仓库：https://gitee.com/alonai/krita-Crazy-villains-brawl
